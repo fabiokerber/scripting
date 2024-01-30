@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<h2>Já pensei em um número! Você sabe qual é?</h2>
+Digite um número entre 1 e 10 e clique no botão <b>Executar</b>.
+<br><br>
+<input/>
+<br><br>
+<button>Executar</button>
+
+<script>
+    var numeroSorteado = Math.round(Math.random()); //randomiza um número de 0 a 10.
+    var entrada = document.querySelector("input"); //variavel entrada recebe o valor da tag input (mundo html), com esta função
+    var clicar = document.querySelector("button"); //variavel clicar é relacionada à tag button (mundo html), com esta função
+
+    entrada.focus(); //ao abrir a página, o cursor já aparece no campo input
+
+    function verifica(){
+        if(entrada.value == numeroSorteado){ //valor inserido na variavel entrada equivalente ao valor inserido na tag input (mundo html)
+            alert("Você ACERTOU!\nNumero sorteado foi: " + numeroSorteado + ".");
+        } else {
+            alert("Você ERRRRROUUUUU!!!\nNumero sorteado foi: " + numeroSorteado + ".");
+        }
+        entrada.value = ""; //limpa o numero digitado para a proxima execução
+        entrada.focus(); //após clicar no botao o cursor já aparece no campo input
+    }
+
+    clicar.onclick = verifica; //associa o click do botao à função verifica, ou seja só executa a função somente no clicar
+
+</script>

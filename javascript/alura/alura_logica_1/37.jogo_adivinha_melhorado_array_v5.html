@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+
+<h2>Já pensei em um número! Você sabe qual é?</h2>
+Digite um número entre 1 e 10 e clique no botão <b>Executar</b>.
+<br><br>
+<input/>
+<br><br>
+<button>Executar</button>
+
+<script>
+
+    function sorteia(){ //função para gerar numeros aleatorios
+        return Math.round(Math.random() * 10);
+    }
+
+    function sorteiaNumeros(quantidade){ //funcao que conforme a quantidade informada mais abaixo gera uma lista de numeros aleatorios, chamando a funcao sorteia
+        var segredos = []; //informa a variavel segredos com valor zerado de lista 
+        var contador = 1;
+        while(contador <= quantidade){ //quantidade foi informada mais abaixo, ou seja, é 3
+            segredos.push(sorteia()); //usa a funcao sorteia para empurrar com o .push mais um numero a lista da variavel segredos
+            contador++;
+        }
+        return segredos;
+    }
+
+    var segredos = sorteiaNumeros(3); //informa criação de array contendo 4 valores
+
+    var entrada = document.querySelector("input"); 
+    var clicar = document.querySelector("button"); 
+
+    entrada.focus(); 
+
+    function verifica(){
+        var acertou = false;
+        for (var posicao = 0; posicao < segredos.length; posicao++){ //.length calcula o tamanho do array, ou seja, neste caso quatro valores
+            if(entrada.value == segredos[posicao]){ 
+                    alert("Você ACERTOU!\nOs numeros sorteados foram: " + segredos + ".");
+                    acertou = true; //altera o valor da variavel acertou para true
+                    break; //encerra a execução do for quando acertar o numero sorteado
+            }
+        }
+
+            if (acertou == false) {
+                alert("Você ERRRRROUUUUU!!!\nOs numeros sorteados foram: " + segredos + ".");
+            }
+
+            entrada.value = ""; 
+            entrada.focus(); 
+        }
+
+    clicar.onclick = verifica; 
+
+</script>

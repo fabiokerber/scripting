@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+//declaracao de funcoes
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    } 
+
+    function exibeNaTela(frase) { 
+        document.write(frase);
+        pulaLinha();
+    } 
+
+    for(var linha = 1; linha <= 3; linha++){ //criar três linhas
+        for(var conluna = 1; coluna <= 10; coluna++){ //printar 10 estrelas
+            document.write("*"); //printa 1 estrela a cada execução do for
+        }
+    pulaLinha(); //ao printar as 10 estrelas, pula linha
+}
+
+</script>

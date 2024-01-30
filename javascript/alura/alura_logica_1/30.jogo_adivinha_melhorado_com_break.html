@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+//declaracao de funcoes
+
+function pulaLinha() {
+    document.write("<br><br>");
+} 
+
+function exibeNaTela(frase) { 
+    document.write(frase);
+    pulaLinha();
+} 
+
+var contador = 1;
+var chances = 5;
+
+while(contador <= chances){
+    var numeroPensado = Math.round(Math.random()); //randomiza o numero a cada tentativa
+    var chute = parseInt(prompt("Já pensei em um número! Você sabe qual é?"));
+    if(chute == numeroPensado){ 
+        exibeNaTela("Você acertou!");
+        break; //força a execução da função acima, que neste caso é o while
+    } else {
+        exibeNaTela("Você erro, o número pensado foi " + numeroPensado + ".");
+    }
+    contador++; //soma +1 a cada execução
+}    
+
+</script>

@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+//declaracao de funcoes
+
+function pulaLinha() {
+    document.write("<br><br>");
+} 
+
+function exibeNaTela(frase) { 
+    document.write(frase);
+    pulaLinha();
+} 
+
+//var vitorias = prompt("Entre com o número de vitórias."); //desta forma que esta o prompt sempre registra como string/texto
+//alert(vitorias + 10);   //multiplicando ou dividindo o JavaScript entende que o texto que entrou pelo prompt é número 
+
+var vitorias = parseInt(prompt("Entre com o número de vitórias.")); //parseInt > Recebe texto e converte em numero. Retira as aspas....
+
+var empates = parseInt(prompt("Entre com o número de empates."));
+
+var pontos = (vitorias * 3) + empates;
+
+exibeNaTela("Os pontos do seu time é " + pontos);
+
+
+
+</script>

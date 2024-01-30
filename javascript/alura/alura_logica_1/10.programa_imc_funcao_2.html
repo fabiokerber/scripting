@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+//declaracao de funcoes
+
+function pulaLinha() {
+    document.write("<br><br>");
+} 
+
+function exibeNaTela(frase) { 
+    document.write(frase);
+    pulaLinha();
+} 
+
+function calculaIMC(altura, peso) {
+    imc = peso / (altura * altura);
+}
+
+function somaDoisNumeros(numero1, numero2) {
+        exibeNaTela("A soma de 20 + 30 é " + (numero1 + numero2) + ".");
+}
+
+//----------------------------------------
+
+//IMC Fabio
+//peso 71
+//altura 1.73
+calculaIMC(1.73, 71);
+exibeNaTela("O IMC de Fabio é " + Math.round(imc) + ".");
+
+somaDoisNumeros(20, 30);
+</script>

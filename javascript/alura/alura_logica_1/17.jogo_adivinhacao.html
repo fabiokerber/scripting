@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+//declaracao de funcoes
+
+function pulaLinha() {
+    document.write("<br><br>");
+} 
+
+function exibeNaTela(frase) { 
+    document.write(frase);
+    pulaLinha();
+} 
+
+var numeroPensado = Math.round(Math.random()); //arredonda o numero randomizado. neste caso de 0 a 10, se quiser mais basta multiplicar por * 10, por * 100...
+var chute = parseInt(prompt("Já pensei em um número! Você sabe qual é?"));
+
+if(chute == numeroPensado){
+    exibeNaTela("Você acertou!");
+} else {
+    exibeNaTela("Você erro, o número pensado foi " + numeroPensado + ".");
+}
+
+</script>

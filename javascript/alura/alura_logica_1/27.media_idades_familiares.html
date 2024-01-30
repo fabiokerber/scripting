@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+//declaracao de funcoes
+    function pulaLinha() {
+        document.write("<br><br>");
+    } 
+
+    function exibeNaTela(frase) { 
+        document.write(frase);
+        pulaLinha();
+    } 
+
+    var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
+    var numero = 1;
+    var totalIdades = 0;
+
+    while(numero <= totalFamiliares){
+        var idade = parseInt(prompt("Informe idade do familiar:"));
+        totalIdades = totalIdades + idade; // vai acumulando as idades informadas para no final pegar a média
+        numero++; // soma numero para comparar com o totalFamiliares informado no início
+    }
+    
+    var mediaDasIdades = totalIdades / totalFamiliares;
+
+    exibeNaTela("A média das idades dos familiare é " + mediaDasIdades + ".");
+
+</script>

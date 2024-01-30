@@ -1,0 +1,70 @@
+<meta charset="UTF-8">
+
+<script>
+//declaracao de funcoes
+
+function tituloInicial() {
+    document.write("<h3>Apresentação das idades.</h3>");
+    document.write("<br>");
+} 
+
+function exibePopUp() {
+    alert("Sera exibida a idade de " + nome + ".");
+} 
+
+function pulaLinha() {
+    document.write("<br><br>");
+} 
+
+function exibeNaTela(frase) { //neste caso o  se torna uma variavel e recebe o valor que esta dentro dos parenteses no exibeNaTela mais abaixo
+    document.write(frase);
+    pulaLinha(); //uma funcao chama a outra funcao pulaLinha, logo após exibir a frase
+} 
+
+//tudo que esta dentro dessas chaves pertencem a funcao pulaLinha
+//funcao sempre verbo. indica sempre uma acao a ser executada.
+//torna o codigo mais facil de ler
+
+//----------------------------------------
+
+//declaracao de variaveis gerais
+var ano = 2021;
+
+//----------------------------------------
+
+tituloInicial();
+
+exibeNaTela("Lista abaixo apresenta as idades de cada colaborador: ");
+
+var nome = "Rodrigo"; //chumba valor na variavel nome
+
+exibePopUp();
+
+exibeNaTela("Rodrigo tem " + (ano - 1987) + " anos."); // < entre parenteses se torna o valor de "frase" !!!
+
+nome = "Fabio"; //chumba valor na variavel nome
+
+exibePopUp();
+
+exibeNaTela("Fabio tem " + (ano - 1994) + " anos."); // < entre parenteses se torna o valor de "frase" !!!
+
+nome = "Joaquim"; //chumba valor na variavel nome
+
+exibePopUp();
+
+exibeNaTela("Joaquim tem " + (ano - 1955) + " anos."); // < entre parenteses se torna o valor de "frase" !!!
+
+nome = "Ferreira"; //chumba valor na variavel nome
+
+exibePopUp();
+
+exibeNaTela("Ferreira tem " + (ano - 1932) + " anos."); // < entre parenteses se torna o valor de "frase" !!!
+
+nome = "Marcelo"; //chumba valor na variavel nome
+
+exibePopUp();
+
+exibeNaTela("Marcelo tem " + (ano - 1800) + " anos."); // < entre parenteses se torna o valor de "frase" !!!
+
+
+</script>

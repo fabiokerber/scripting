@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+//declaracao de funcoes
+
+function pulaLinha() {
+    document.write("<br><br>");
+} 
+
+function exibeNaTela(frase) { 
+    document.write(frase);
+    pulaLinha();
+} 
+
+//espaço 1 - variavel de inicialização do for (var multiplicador = 1)
+//espaço 2 - condição de repetição para saber se deve continuar repetindo (multiplicador <= 10)
+//espaço 3 - incremento +1 na variavel multiplicador (multiplicador = multiplicador + 1)
+//pós incremento - ao inves de (multiplicador = multiplicador + 1) usa-se (multiplicador++) para somar +1
+for(var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+    resultado = (7 * multiplicador);
+    exibeNaTela("7 x " + multiplicador + " = " + resultado);
+}
+
+// forma inicial de multiplicar
+//var multiplicador = 1
+//
+//while(multiplicador <= 10) {
+//    mostra(7 * multiplicador);
+//    multiplicador = multiplicador + 1 ;
+//}
+
+</script>

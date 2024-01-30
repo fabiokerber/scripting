@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+//declaracao de funcoes
+
+function pulaLinha() {
+    document.write("<br><br>");
+} 
+
+function exibeNaTela(frase) { 
+    document.write(frase);
+    pulaLinha();
+} 
+
+var limite = parseInt(prompt("Entre com a data limite."));
+var anoCopa = 1930;
+
+//instrucao de repeticao, recebe true significa que enquanto for verdadeiro vai repetindo eternamente pois não há uma condicao
+//while(true){
+//    alert("Teve copa em " + anoCopa);
+//    anoCopa = anoCopa + 4;
+//}
+
+//executa a condicao enquanto o ano for menor ou igual a 2021
+//while(anoCopa <= 2021){ 
+//    exibeNaTela("Teve copa em " + anoCopa + ".");
+//    anoCopa = anoCopa + 4;
+//}
+
+while(anoCopa <= limite){ 
+    exibeNaTela("Teve copa em " + anoCopa + ".");
+    anoCopa = anoCopa + 4;
+}
+
+alert("Será exibido em tela.")
+
+</script>

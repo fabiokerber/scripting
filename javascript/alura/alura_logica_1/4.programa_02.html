@@ -1,0 +1,60 @@
+<meta charset="UTF-8">
+
+<script>
+
+    document.write("Minha idade é "); //document.write escreve do JavaScript direto no html
+    document.write(18 + "."); //neste caso o JavaScript entende que o string é um tipo numero
+    document.write("<br>"); //html entende que deve pular uma linha
+    document.write("O resultado de 30 x 40 é "); //texto explicativo
+    document.write(30*40 + "."); //calculos usando string do tipo numero
+    document.write("<br>"); //html entende que deve pular uma linha
+    document.write("Número " + "5" + "20"); //concatena os textos string do tipo texto
+    document.write("<br>");
+
+    document.write("A média das idades é ");
+    document.write((20 + 10 + 30)/3 + ".");
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("Fabio nasceu em " + (2021 - 34) + ".");
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("A" + "B" + 20 + 10 + "C" + (5 + 10) + "D"); //concatenacao e operacao de soma
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("Rodrigo tem " + (2019 - 1987) + " anos.");
+    document.write("<br>");
+    document.write("Fabio tem " + (2021 - 1987) + " anos.");
+    document.write("<br>");
+    document.write("<br>");
+
+    var ano = 2021; //variavel ano RECEBE 2021, só usa o var quando esta declarando a primeira vez
+    document.write("Rodrigo tem " + (ano - 1987) + " anos.");
+    document.write("<br>");
+    ano = 2015; //variavel ano agora RECEBE 2015
+    document.write("Joaquim tem " + (ano - 1987) + " anos.");
+    document.write("<br>");
+    document.write("<br>");
+
+    var media = (39 + 20 + 41)/3;
+    document.write ("A média das idades (39 + 20 + 41) é " + media + ".");
+    document.write("<br>");
+    document.write ("O valor arredondado da média das idades é " + Math.round(media) + ".");
+    document.write("<br>");
+    document.write("<br>");
+
+    var idadeFlavio = 39;
+    var idadeRodrigo = 20;
+    var idadeJoaquim = 41;
+    document.write ("A idade de Flavio é " + idadeFlavio + ".");
+    document.write("<br>");
+    document.write ("A idade do Rodrigo é " + idadeRodrigo + ".");
+    document.write("<br>");
+    document.write ("A idade de Joaquim é " + idadeJoaquim + ".");
+    document.write("<br>");
+    var totalIdades = (idadeFlavio + idadeRodrigo + idadeJoaquim);
+    document.write ("O valor total das idades é " + totalIdades + ".");
+
+</script>

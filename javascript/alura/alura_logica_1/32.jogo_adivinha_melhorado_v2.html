@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<button>Já pensei em um número! Você sabe qual é?</button>
+<br><br>
+<input/>
+
+<script>
+    var numeroSorteado = 5;
+    var entrada = document.querySelector("input"); //variavel entrada recebe o valor da tag input (mundo html), com esta função
+    var clicar = document.querySelector("button"); //variavel clicar é relacionada à tag button (mundo html), com esta função
+
+    function verifica(){
+        if(entrada.value == numeroSorteado){ //valor inserido na variavel entrada equivalente ao valor inserido na tag input (mundo html)
+            alert("Você ACERTOU");
+        } else {
+            alert("Você ERRRRROUUUUU!!!");
+        }
+    }
+
+    clicar.onclick = verifica; //associa o click do botao à função verifica, ou seja só executa a função somente no clicar
+
+</script>

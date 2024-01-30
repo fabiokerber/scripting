@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<script>
+//declaracao de funcoes
+
+function pulaLinha() {
+    document.write("<br><br>");
+} 
+
+function exibeNaTela(frase) { 
+    document.write(frase);
+    pulaLinha();
+} 
+
+function calculaIMC(altura, peso) {
+    var imc = peso / (altura * altura);
+    return imc; //este caso a function já sabe que ao calcular o imc ja retorna o resultado para a variavel imc
+}
+
+function outroExemplo(altura, peso) {
+    return imc = peso / (altura * altura);
+}
+
+//----------------------------------------
+
+//IMC Fabio
+//peso 71
+//altura 1.73
+var imcFabio = calculaIMC(1.73, 71);
+
+//IMC Daii
+//peso 60
+//altura 1.71
+var imcDaii = calculaIMC(1.71, 60);
+
+exibeNaTela(imcFabio)
+exibeNaTela(imcDaii)
+
+var imcNada= calculaIMC(3.60, 60);
+exibeNaTela(imcNada)
+
+</script>

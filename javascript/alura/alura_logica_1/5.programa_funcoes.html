@@ -1,0 +1,63 @@
+<meta charset="UTF-8">
+
+<script>
+//declaracao de funcoes
+
+function tituloInicial() {
+
+    document.write("<h3>Apresentação das idades.</h3>");
+
+} 
+
+function pulaLinha() {
+
+    alert("Sera exibida a idade de " + nome + ".");
+    document.write("<br><br>");
+
+} 
+
+//tudo que esta dentro dessas chaves pertencem a funcao pulaLinha
+//funcao sempre verbo. indica sempre uma acao a ser executada.
+//torna o codigo mais facil de ler
+
+//----------------------------------------
+
+//declaracao de variaveis gerais
+var ano = 2021;
+
+//----------------------------------------
+
+tituloInicial();
+
+var nome = "Rodrigo";
+
+pulaLinha();
+
+document.write("Rodrigo tem " + (ano - 1987) + " anos.");
+
+nome = "Fabio";
+
+pulaLinha();
+
+document.write("Fabio tem " + (ano - 1994) + " anos.");
+
+nome = "Joaquim";
+
+pulaLinha();
+
+document.write("Joaquim tem " + (ano - 1955) + " anos.");
+
+nome = "Ferreira";
+
+pulaLinha();
+
+document.write("Ferreira tem " + (ano - 1932) + " anos.");
+
+nome = "Marcelo";
+
+pulaLinha();
+
+document.write("Marcelo tem " + (ano - 1800) + " anos.");
+
+
+</script>

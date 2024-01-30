@@ -1,0 +1,20 @@
+{
+  "name": "banco",
+  "version": "1.0.0",
+  "description": "Projeto do banco alura",
+  "main": "06.index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiokerber/JavaScript.git"
+  },
+  "author": "Fabio K",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/fabiokerber/JavaScript/issues"
+  },
+  "homepage": "https://github.com/fabiokerber/JavaScript#readme"
+}

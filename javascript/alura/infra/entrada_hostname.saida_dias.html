@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+
+<script>
+function servidoresAcionados(hostname) {
+    let days;
+    if (hostname == "srv01") {
+        days = '5';
+    } else {
+        days = '9';
+    }
+    return days;
+}
+
+var days = servidoresAcionados("srv01") //teste inserindo o hostname srv01
+document.write(days);
+
+</script>

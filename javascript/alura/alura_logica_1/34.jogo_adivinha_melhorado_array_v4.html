@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<h2>Já pensei em um número! Você sabe qual é?</h2>
+Digite um número entre 1 e 10 e clique no botão <b>Executar</b>.
+<br><br>
+<input/>
+<br><br>
+<button>Executar</button>
+
+<script>
+
+    var numerosSorteados = [5,10,3,2]; //informa criação de array contendo 4 valores
+    var entrada = document.querySelector("input"); 
+    var clicar = document.querySelector("button"); 
+
+    entrada.focus(); 
+
+    function verifica(){
+        var acertou = false;
+        for (var posicao = 0; posicao < numerosSorteados.length; posicao++){ //.length calcula o tamanho do array, ou seja, neste caso quatro valores
+            if(entrada.value == numerosSorteados[posicao]){ 
+                    alert("Você ACERTOU!\nOs numeros sorteados foram: " + numerosSorteados + ".");
+                    acertou = true; //altera o valor da variavel acertou para true
+                    break; //encerra a execução do for quando acertar o numero sorteado
+            }
+        }
+
+            if (acertou == false) {
+                alert("Você ERRRRROUUUUU!!!\nOs numeros sorteados foram: " + numerosSorteados + ".");
+            }
+
+            entrada.value = ""; 
+            entrada.focus(); 
+        }
+
+    clicar.onclick = verifica; 
+
+</script>
