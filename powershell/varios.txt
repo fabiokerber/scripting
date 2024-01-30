@@ -1,0 +1,23 @@
+> Diff
+Compare-Object -ReferenceObject (Get-Content -Path C:\Users\fabio\Desktop\total.txt) -DifferenceObject (Get-Content -Path C:\Users\fabio\Desktop\sucesso.txt) | Out-File C:\Users\fabio\Desktop\diff.txt
+
+> Service Information
+Get-Service *<service>* | Select-Object DisplayName,Status,Name
+(Get-Service -ServiceName Benner*).Name
+
+> Service Event Time
+(Get-EventLog -LogName "System" -Source "Service Control Manager" -EntryType "Information" -Message "*Print Spooler service*running*" -Newest 1).TimeGenerated
+
+> Change Date/Time File
+(Get-Item "D:\IBM\HTTPServer\logs\tst\access.log").LastWriteTime=("3 August 2019 17:10:00")
+
+> Del - 7 days
+forfiles /p "D:\IBM\HTTPServer\logs\tst" /s /m *.log /D-7 /C "cmd /c del @path"
+
+> Get file content - 10 last lines
+Get-Content C:\win\log\automacao.log -Tail 10
+
+> List directories
+dir 'C:\teste01' , 'C:\teste02' 2> $null
+
+https://mathieubuisson.github.io/powershell-linux-bash/ 
